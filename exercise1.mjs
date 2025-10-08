@@ -17,3 +17,9 @@ const products = [
 ];
 
 // Your code here
+const cleanedProducts = products.map((item) => {
+  const trimmed = item.trim();
+  return trimmed.charAt(0).toUpperCase() + trimmed.slice(1).toLowerCase(); 
+});
+
+console.log(cleanedProducts);
